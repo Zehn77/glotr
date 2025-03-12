@@ -1,4 +1,3 @@
-import logo from "./../assets/g-logo.svg";
 import { RiMenu2Line } from "react-icons/ri";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { BsCart3 } from "react-icons/bs";
@@ -18,7 +17,7 @@ export default function Header() {
       </button>
 
       <div className="md:flex hidden items-center gap-4">
-        <img src={logo} className="w-[180px]" />
+        <img src="./assets/g-logo.svg" className="w-[180px]" />
         <button
           type="button"
           className="cursor-pointer flex items-center justify-center gap-2 focus:outline-none text-white bg-red-500 hover:bg-red-600 focus:ring-4 focus:ring-red-100 font-medium rounded-lg px-5 py-2.5 "
@@ -39,9 +38,9 @@ export default function Header() {
           >
             <path
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
             />
           </svg>
@@ -56,14 +55,14 @@ export default function Header() {
       </div>
 
       <div className="hidden items-center gap-2.5 md:flex">
-        <div className="bg-gray-100 p-3.5  inline-block rounded-b-md shadow cursor-pointer">
+        <div className="bg-gray-100 p-3.5  inline-block rounded-b-md shadow cursor-pointer hover:shadow-lg">
           <IoMdHeartEmpty className="w-[20px] h-[20px] text-gray-500" />
         </div>
 
-        <div className="bg-gray-100 p-3.5 inline-block rounded-b-md shadow cursor-pointer">
+        <div className="bg-gray-100 p-3.5 inline-block rounded-b-md shadow cursor-pointer hover:shadow-lg">
           <BsCart3 className="w-[20px] h-[20px] text-gray-500" />
         </div>
-        <div className="bg-gray-100 p-3.5 inline-block rounded-b-md shadow cursor-pointer">
+        <div className="bg-gray-100 p-3.5 inline-block rounded-b-md shadow cursor-pointer hover:shadow-lg">
           <BsPerson className="w-[20px] h-[20px] text-gray-500" />
         </div>
       </div>
