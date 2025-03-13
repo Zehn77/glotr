@@ -8,3 +8,14 @@ export interface Item {
   company: string;
   price: number;
 }
+
+export interface Character {
+  id: number;
+  label: string;
+  value: string;
+}
+
+export interface Payment {
+  id: number;
+  label: string;
+}
